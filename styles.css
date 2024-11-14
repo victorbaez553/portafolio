@@ -146,16 +146,16 @@ presentacion__enlace__subtitulos{
     text-align: center;
 }
 .icono__html::before {
-    content: url(../img/html.png);
+    content: url(./img/html.png);
 }
 .icono__js::before {
-    content: url(../img/js.png);
+    content: url(./img/js.png);
 }
 .icono__css::before {
-    content: url(../img/css.png);
+    content: url(./img/css.png);
 }
 .icono__react::before {
-    content: url(../img/react.png);
+    content: url(./img/react.png);
 }
 /*SECCION HOBIES*/
 .hobies__titulo{
@@ -186,16 +186,16 @@ presentacion__enlace__subtitulos{
     text-align: center;
 }
 .icono__musica::before {
-    content: url(../img/musica.png);
+    content: url(./img/musica.png);
 }
 .icono__series::before {
-    content: url(../img/series.png);
+    content: url(./img/series.png);
 }
 .icono__cocina::before {
-    content: url(../img/cocina.png);
+    content: url(./img/cocina.png);
 }
 .icono__fotos::before {
-    content: url(../img/foto.png);
+    content: url(./img/foto.png);
 }
 /*SECCION FORMACION*/
 /* Estilo para el contenedor de formación */
