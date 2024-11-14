@@ -1,0 +1,734 @@
+*,
+*::before,
+*::after {
+    --azul-oscuro: #154580;
+    --azul-medio: #3970BE;
+    --azul-claro: #E5F1FF;
+    --gris-texto: #444444;
+    --gris-claro: #ECECEC;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--gris-claro);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cabecera__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera__container p {
+    color: var(--gris-texto);
+}
+.cabecera__enlace {
+    display: flex;
+    gap: 15px;
+}
+.cabecera__enlace__link:hover{
+    color: var(--azul-medio);
+}
+.cabecera__enlace__link{
+    color: var(--gris-texto);
+    text-decoration: none;
+}
+.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.presentacion__contenido{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+}
+.presentacion__contenido__titulo{
+    font-size: 1.5rem;
+    color: var(--gris-texto);
+    text-align: left;
+}
+.presentacion__contenido__texto{
+    font-size: 1rem;
+    color: var(--gris-texto);
+    text-align: left;
+}
+.presentacion__enlace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+presentacion__enlace__subtitulos{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.presentacion__enlace__link{
+    width: 65%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--gris-texto);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion__enlace__link:hover{
+    color: var(--azul-medio);
+}
+.presentacion__enlace{
+    width: 50%;
+}
+.presentacion__img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+/*SECCION SOBRE MI*/
+.sobremi{
+    background-color: var(--azul-claro);
+    padding: 20px;
+}
+.sobremi__contenido,
+.cabecera__container,
+.presentacion,
+.habilidades,
+.hobies,
+.formacion__contenido,
+.proyecto,
+.contacto__container{
+    margin: 50px;
+}
+
+.sobremi__titulo{
+    font-size: 1.5rem;
+    color: var(--gris-texto);
+    text-align: left;
+}
+.sobremi__texto {
+    font-size: 1rem;
+    color: var(--gris-texto);
+    text-align: left;
+}
+/*SECCION HABILIDADES*/
+.skills__titulo{
+    font-size: 1.5rem;
+    color: var(--gris-texto);
+    text-align: center;
+}
+.habilidades{
+    display: flex;
+    justify-content: space-between;
+}
+.habilidades__lista{
+    background-color: white; /* Color de fondo para los elementos */
+    height: 200px;
+    width: 200px;
+    text-align: center; /* Centrar el contenido del LI */
+    border: 1px solid #ccc; /* Borde alrededor de cada elemento */
+    gap: 10px;
+    margin: 0 5px; 
+    display: flex; /* Habilita Flexbox en cada cuadro */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: flex-end;
+    border-radius: 15px;
+}
+.habilidades__items{
+    text-decoration: none;
+    text-align: center;
+}
+.icono__html::before {
+    content: url(../img/html.png);
+}
+.icono__js::before {
+    content: url(../img/js.png);
+}
+.icono__css::before {
+    content: url(../img/css.png);
+}
+.icono__react::before {
+    content: url(../img/react.png);
+}
+/*SECCION HOBIES*/
+.hobies__titulo{
+    font-size: 1.5rem;
+    color: var(--gris-texto);
+    text-align: center;
+}
+.hobies{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.hobies__lista{
+    background-color: white; /* Color de fondo para los elementos */
+    height: 200px;
+    width: 200px;
+    text-align: center; /* Centrar el contenido del LI */
+    border: 1px solid #ccc; /* Borde alrededor de cada elemento */
+    gap: 10px;
+    margin: 10px 10px; 
+    display: flex; /* Habilita Flexbox en cada cuadro */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: flex-end;
+    border-radius: 15px;
+}
+.hobies__items{
+    text-decoration: none;
+    text-align: center;
+}
+.icono__musica::before {
+    content: url(../img/musica.png);
+}
+.icono__series::before {
+    content: url(../img/series.png);
+}
+.icono__cocina::before {
+    content: url(../img/cocina.png);
+}
+.icono__fotos::before {
+    content: url(../img/foto.png);
+}
+/*SECCION FORMACION*/
+/* Estilo para el contenedor de formación */
+.formacion__container {
+    background-color: var(--azul-claro); /* Color de fondo similar */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.formacion__titulo {
+    font-size: 1.5rem;
+    color: var(--gris-texto);
+    text-align: center; 
+}
+
+  
+  /* Estilo para la lista */
+.formacion__contenido {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  /* Estilo para cada ítem de formación */
+.formacion__items {
+    text-align: center;
+    width: 25%; /* Ajusta el ancho según sea necesario */
+}
+  
+  /* Estilo para el cuadro que contiene la imagen */
+.formacion__cuadro {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+  
+  /* Estilo para la imagen */
+.formacion__cuadro img {
+    max-width: 60%;
+    height: 200px;
+}
+  
+  /* Estilo para el título y subtítulo fuera del cuadro */
+.formacion__items h4 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+.formacion__items h5 {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+/* SECCION DE EXPERIENCIA */
+.proyecto__container {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--gris-claro);
+}
+
+/* Contenedor de la sección del proyecto */
+.proyecto {
+    display: flex;
+    flex-direction: column; /* Título centrado */
+    align-items: center;
+}
+
+/* Título de la sección */
+.proyecto__titulo {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del iframe y enlaces */
+.proyecto-contenido {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos estén a los lados */
+    align-items: center;
+    gap: 20px; /* Espacio entre el iframe y los enlaces */
+    width: 100%;
+    max-width: 1200px; /* Restringe el tamaño máximo de la sección */
+}
+
+/* Estilo del iframe */
+.iframe {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 65%; /* Ajuste para que el iframe ocupe el 60% del ancho */
+    height: 500px; /* Ajusta la altura del iframe */
+}
+
+/* Contenedor de la descripción, título y botones */
+.proyecto__enlaces {
+    display: flex;
+    flex-direction: column;
+    color: var(--gris-texto);
+    align-items: flex-start; /* Alinea los enlaces a la izquierda */
+    gap: 15px;
+    width: 30%; /* Controla el ancho de los enlaces */
+}
+.proyecto__enlaces a {
+    display: inline-block; /* Asegura que los botones estén en fila */
+    padding: 10px 20px;
+}
+
+/* Botones de los enlaces */
+.repo-btn{
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #1e88e5;
+    border: solid #1e88e5;
+    text-decoration: none;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+}
+.demo-btn {
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #1e88e5;
+    border: solid #1e88e5;
+    text-decoration: none;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+}
+
+.repo-btn:hover,
+.demo-btn:hover {
+    background-color: #1565c0;
+}
+
+/* Estilo del párrafo */
+.proyecto__enlaces p {
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+    margin: 0;
+}
+
+/* Contenedor de la sección del proyecto */
+.proyecto {
+    display: flex;
+    flex-direction: column; /* Título centrado */
+    align-items: center;
+}
+
+/* Título de la sección */
+.proyecto__titulo {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Contenedor del iframe y enlaces */
+.proyecto-contenido2 {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos estén a los lados */
+    align-items: center; /* Alinea los elementos al principio del contenedor */
+    gap: 20px; /* Espacio entre el iframe y los enlaces */
+    width:100%;
+    max-width: 1200px; /* Restringe el tamaño máximo de la sección */
+}
+
+/* Estilo del iframe */
+.iframe2 {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 65%; /* Ajuste para que el iframe ocupe el 65% del ancho */
+    height: 500px; /* Ajusta la altura del iframe */
+    order: 2; /* Asegura que el iframe esté a la derecha */
+}
+
+/* Contenedor de la descripción, título y botones */
+.proyecto__enlaces2 {
+    display: flex;
+    flex-direction: column; /* Apila el título y párrafo */
+    color: var(--gris-texto);
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    gap: 10px; /* Espacio entre el título, párrafo y botones */
+    width: 30%; /* Controla el ancho de los enlaces */
+}
+
+/* Contenedor de los botones */
+.proyecto__enlaces2 a {
+    display: inline-block; /* Asegura que los botones estén en fila */
+    padding: 10px 20px;
+    
+}
+
+/* Contenedor del iframe y enlaces */
+.proyecto-contenido3 {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos estén a los lados */
+    align-items: center;
+    gap: 20px; /* Espacio entre el iframe y los enlaces */
+    width: 100%;
+    max-width: 1200px; /* Restringe el tamaño máximo de la sección */
+}
+
+/* Estilo del iframe */
+.iframe3 {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 65%; /* Ajuste para que el iframe ocupe el 60% del ancho */
+    height: 500px; /* Ajusta la altura del iframe */
+}
+
+/* Contenedor de la descripción, título y botones */
+.proyecto__enlaces3 {
+    display: flex;
+    flex-direction: column;
+    color: var(--gris-texto);
+    align-items: flex-start; /* Alinea los enlaces a la izquierda */
+    gap: 15px;
+    width: 30%; /* Controla el ancho de los enlaces */
+}
+/* Contenedor de los botones */
+.proyecto__enlaces3 a {
+    display: inline-block; /* Asegura que los botones estén en fila */
+    padding: 10px 20px;
+}
+
+/* SECCION CONTACTO */
+.contacto__container {
+    display: flex;
+    justify-content: flex-start; /* Alinea el formulario y la imagen a la izquierda */
+    align-items: stretch; /* Asegura que los elementos tengan la misma altura */
+    height: 100vh; /* La altura ocupa el 100% de la pantalla */
+    background-color: var(--azul-claro); /* Fondo azul claro */
+}
+
+/* Imagen de contacto */
+.contacto__container img {
+    height: 100%; /* La imagen ocupa el 100% de la altura del contenedor */
+    width: 50%; /* La imagen ocupa el 50% del ancho */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    z-index: 1; /* Coloca la imagen por debajo del formulario */
+} 
+
+/* Estilo del formulario */
+.formulario {
+    background-color: var(--azul-claro); /* Fondo blanco para el formulario */
+    padding: 3rem; /* Espaciado interno para el formulario */
+    width: 50%; /* El formulario ocupa el 50% del ancho */
+    border-radius: 8px; /* Bordes redondeados */
+    position: relative;
+    z-index: 2; /* Asegura que el formulario quede encima de la imagen */
+    height: 100%; /* El formulario ocupa el 100% de la altura del contenedor */
+}
+.formulario h4{
+    font-size: 30px;
+    color: var(--gris-texto);
+    margin: 0 0 2rem 0;
+}
+
+/* Título del formulario */
+.alinear-texto {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+/* Campos del formulario */
+.campo {
+    display: flex;
+    flex-direction: column; /* Los campos y sus labels se apilan verticalmente */
+    margin-bottom: 1rem;
+}
+
+.campo__label {
+    margin-bottom: 0.4rem; /* Espacio entre el label y el campo */
+    color: var(--gris-texto);
+    font-weight: bold; /* Hace que el label se destaque */
+    text-align: left;
+}
+
+.campo__field {
+    padding: 0.5rem; /* Espaciado interno en los campos */
+    border: none 0 #bbb; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem;
+}
+
+.campo__field--textarea {
+    height: 5rem; /* Altura del campo de mensaje */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilo del botón */
+.boton--primario {
+    background-color: #1e88e5; /* Color azul del botón */
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 30%; /* Hace que el botón ocupe el 100% del ancho */
+    transition: background-color 0.3s;
+}
+
+.boton--primario:hover {
+    background-color: #1565c0; /* Color más oscuro al pasar el mouse */
+}
+.footer{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Ajustes para pantallas de tablet */
+@media (max-width: 1024px) {
+    /* Ajuste en la presentación */
+    .presentacion__img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .cabecera__enlace .cabecera__enlace__link:not(:last-child) {
+        display: none;
+    }
+    /* Skills en tablet */
+    .habilidades__lista {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Sección de Hobbies */
+    .hobies__lista {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Sección de Formación Académica: Alineados horizontalmente */
+    .formacion__contenido {
+        display: flex;
+        flex-direction: row; /* Alineados horizontalmente */
+        justify-content: space-around; /* Espacio entre los elementos */
+        text-align: center;
+    }
+
+    /* Ajustes de los iframes en Experiencia Profesional */
+    .iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Ajustes en el formulario de contacto */
+    .formulario {
+        width: 100%;
+        padding: 2rem;
+    }
+    .campo__field {
+        width: 100%;
+    }
+    .campo__field--textarea {
+        height: 6rem;
+    }
+    .boton--primario {
+        width: 100%;
+    }
+
+    /* Ajustes de la sección de Experiencia Profesional */
+    .proyecto__container {
+        display: flex;
+        flex-direction: column; /* Asegura que los proyectos estén en columna */
+        align-items: center;
+    }
+
+    /* Aseguramos que las secciones de cada proyecto se alineen verticalmente */
+    .proyecto {
+        display: flex;
+        flex-direction: column; /* Los contenidos se apilan en columna */
+        align-items: center;
+        gap: 20px; /* Espacio entre el iframe, título, párrafo y enlaces */
+        width: 100%;
+    }
+
+    .proyecto-contenido, .proyecto-contenido3 {
+        display: flex;
+        flex-direction: column; /* Hacemos que los iframes y su contenido se apilen en columna */
+        align-items: center;
+        gap: 10px;
+        width: 100%; /* Aseguramos que el contenido ocupe el 100% del ancho */
+    }
+    .proyecto-contenido2 {
+        display: flex;
+        flex-direction: column-reverse; /* Invertir el orden de los elementos */
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    /* Aseguramos que los enlaces de cada sección estén uno debajo del otro */
+    .proyecto__enlaces,
+    .proyecto__enlaces2,
+    .proyecto__enlaces3 {
+        display: flex;
+        flex-direction: column; /* Los enlaces estarán en columna */
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 500px; /* Controlamos el ancho de los enlaces */
+        margin: 0 auto;
+    }
+
+    .proyecto__enlaces a,
+    .proyecto__enlaces2 a,
+    .proyecto__enlaces3 a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        border: 1px solid #1e88e5;
+        color: #1e88e5;
+        background-color: white;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .proyecto__enlaces a:hover,
+    .proyecto__enlaces2 a:hover,
+    .proyecto__enlaces3 a:hover {
+        background-color: #1e88e5;
+        color: white;
+    }
+
+    /* Sección de Contacto */
+    .contacto__container {
+        display: flex;
+        flex-direction: column; /* Alineación vertical del contenido */
+        justify-content: flex-start; /* Asegura que el contenido empiece desde arriba */
+        align-items: center;
+        height: auto; /* El contenedor ajusta su tamaño según el contenido */
+    }
+
+    /* Ocultar la imagen de contacto en tablets */
+    .contacto__container img {
+        display: none; /* Esto oculta la imagen */
+    }
+
+    /* Ajustar el formulario de contacto */
+    .formulario {
+        width: 80%; /* El formulario ocupa el 80% del ancho */
+        padding: 2rem;
+        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    }
+
+    .campo__field {
+        width: 100%; /* Campos del formulario ocupan todo el ancho */
+    }
+
+    .campo__field--textarea {
+        height: 5rem; /* Ajustar el tamaño del área de texto */
+    }
+
+    .boton--primario {
+        width: 100%; /* El botón ocupa el 100% del ancho */
+    }
+}
+@media (max-width: 768px){
+    .presentacion {
+        display: flex;
+        flex-direction: column-reverse; /* La imagen estará arriba y el contenido debajo */
+    }
+    /* Contenedor de la lista */
+    .habilidades {
+        display: grid; /* Activar grid */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas, cada una con el mismo ancho */
+        grid-template-rows: repeat(2, auto); /* Dos filas, con altura automática */
+        gap: 20px; /* Espacio entre los elementos */
+    }
+
+    /* Si deseas hacer que los elementos se vean bien alineados */
+    .habilidades__lista {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /* Contenedor de la lista de hobbies */
+    .hobies {
+        display: grid; /* Activar grid */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas, cada una con el mismo ancho */
+        grid-template-rows: repeat(2, auto); /* Dos filas, con altura automática */
+        gap: 20px; /* Espacio entre los elementos */
+    }
+
+    /* Si deseas hacer que los elementos se vean bien alineados */
+    .hobies__lista {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /* Contenedor de la lista de formación */
+    .formacion__contenido {
+        display: grid; /* Activamos el grid */
+        grid-template-columns: 1fr; /* Solo una columna */
+        gap: 20px; /* Espacio entre los elementos */
+        margin-top: 20px; /* Espaciado superior */
+        width: 100%;
+    }
+
+    /* Los elementos dentro de la lista */
+    .formacion__items {
+        display: flex;
+        flex-direction: column; /* Apila los elementos (imagen, título y fecha) en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center;
+        width: 100%;
+    }
+
+    .formacion__cuadro {
+        margin-bottom: 10px; /* Espacio debajo de las imágenes */
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
